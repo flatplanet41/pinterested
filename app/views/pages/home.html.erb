@@ -5,6 +5,7 @@
 		
 		<% if user_signed_in? %>
           <%= link_to "Click Here To Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
+          <%= link_to "List Pins", pins_path, class: "btn btn-default" %>
      <% else %>
 
 
